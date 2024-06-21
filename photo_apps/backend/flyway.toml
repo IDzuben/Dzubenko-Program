@@ -1,0 +1,20 @@
+databaseType = "Sqlite"
+id = "8e052cb2-8828-4f23-a7ea-a10c2707fcae"
+name = "photo_app"
+
+[flyway]
+locations = [ "filesystem:migrations" ]
+mixed = true
+outOfOrder = true
+validateMigrationNaming = true
+
+[flyway.check]
+majorTolerance = 0
+
+[flywayDesktop]
+developmentEnvironment = "development"
+schemaModel = "schema-model"
+shadowEnvironment = "shadow"
+
+[redgateCompare]
+filterFile = "filter.rgf"

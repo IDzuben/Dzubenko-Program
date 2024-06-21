@@ -1,0 +1,16 @@
+{
+    "name": "photo_app_backend",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "postinstall": "node checkCmake.js && npm install opencv4nodejs"
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "sqlite3": "^5.0.0",
+        "multer": "^1.4.3",
+        "opencv4nodejs": "^5.6.0",
+        "@tensorflow/tfjs-node": "^3.9.0"
+    }
+}
